@@ -2,6 +2,9 @@
 """
 Studio garbage collection utilities. Clean up all these old, unused records!
 """
+from __future__ import absolute_import
+
+
 import datetime
 import logging
 
