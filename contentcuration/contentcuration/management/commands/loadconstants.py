@@ -135,7 +135,7 @@ SITES = [
         "fields": {
             "id": 2,
             "name": "Kolibri Studio (Debug Mode)",
-            "domain": "127.0.0.1:8000",
+            "domain": "0.0.0.0:8000",
         },
     },
     {

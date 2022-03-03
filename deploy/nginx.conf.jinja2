@@ -21,7 +21,7 @@ http {
                       application/atom+xml;
     # Proxy upstream to the gunicorn process
     upstream studio {
-        server 127.0.0.1:8081;
+        server 0.0.0.0:8081;
     }
 
     # Allow-list filter for content catalog paths
