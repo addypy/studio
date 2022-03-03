@@ -13,16 +13,16 @@ class ServiceWorkerView(TemplateView):
         context = super().get_context_data(**kwargs)
         # Code to access the compiled serivce worker in developer mode
         # if getattr(settings, "DEBUG", False):
-        #     import requests
+        import requests
 
-        #     request = requests.get("http://127.0.0.1:4000/dist/serviceWorker.js")
-        #     content = request.content
-        # else:
-        path = staticfiles_storage.path("studio/serviceWorker.js")
-        if not os.path.exists(path):
-            path = finders.find("studio/serviceWorker.js")
-        with open(path) as f:
-            content = f.read()
+        request = requests.get("http://13.59.253.202:4000/dist/serviceWorker.js")
+        content = request.content
+#        # else:
+#        path = staticfiles_storage.path("studio/serviceWorker.js")
+#        if not os.path.exists(path):
+#            path = finders.find("studio/serviceWorker.js")
+#        with open(path) as f:
+#            content = f.read()
         context["webpack_service_worker"] = content
         return context
 
