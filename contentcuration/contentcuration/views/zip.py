@@ -202,6 +202,6 @@ class ZipContentView(View):
         response["Content-Security-Policy"] = "default-src 'self' 'unsafe-inline' 'unsafe-eval' data: " + host
 
         if getattr(settings, "DEBUG", False):
-            response["Content-Security-Policy"] += " http://127.0.0.1:4000 ws://127.0.0.1:4000"
+            response["Content-Security-Policy"] += " http://0.0.0.0:4000 ws://0.0.0.0:4000"
 
         return response

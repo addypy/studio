@@ -15,7 +15,7 @@ class ServiceWorkerView(TemplateView):
         # if getattr(settings, "DEBUG", False):
         import requests
 
-        request = requests.get("http://13.59.253.202:4000/dist/serviceWorker.js")
+        request = requests.get("http://0.0.0.0:4000/dist/serviceWorker.js")
         content = request.content
 #        # else:
 #        path = staticfiles_storage.path("studio/serviceWorker.js")
