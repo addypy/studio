@@ -13,7 +13,7 @@ from .urls import urlpatterns
 
 def webpack_redirect_view(request):
     return HttpResponseRedirect(
-        "http://127.0.0.1:4000/__open-in-editor?{query}".format(
+        "http://13.59.253.202:4000/__open-in-editor?{query}".format(
             query=request.GET.urlencode()
         )
     )
