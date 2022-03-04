@@ -74,7 +74,7 @@ module.exports = (env = {}) => {
     output: {
       filename: '[name]-[hash].js',
       path: bundleOutputDir,
-      publicPath: dev ? 'http://0.0.0.0:4000/dist/' : '/static/studio/',
+      publicPath: dev ? 'http://13.59.253.202:4000/dist/' : '/static/studio/',
     },
     devServer: {
       port: 4000,
