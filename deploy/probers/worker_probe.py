@@ -11,7 +11,7 @@ class WorkerProbe(BaseProbe):
 
     def do_probe(self):
         celery_dashboard_url = (
-            os.getenv("CELERY_DASHBOARD_URL") or "http://127.0.0.1:5555/dashboard"
+            os.getenv("CELERY_DASHBOARD_URL") or "http://0.0.0.0:5555/dashboard"
         )
         response = requests.get(celery_dashboard_url, params={"json": "1"})
         response.raise_for_status()
